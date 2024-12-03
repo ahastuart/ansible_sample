@@ -1,0 +1,7 @@
+- name: copy motd file
+  template:
+    src: templates/motd.js
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: '0444'
